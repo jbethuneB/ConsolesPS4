@@ -1,0 +1,5 @@
+﻿  Source.cpp
+Source.obj : error LNK2019: unresolved external symbol "struct GameAAA::GameData * __cdecl GameAAA::CreateGameData(void)" (?CreateGameData@GameAAA@@YAPAUGameData@1@XZ) referenced in function _WinMain@16
+Source.obj : error LNK2019: unresolved external symbol "struct GameAAA::RenderCommands __cdecl GameAAA::Update(struct GameAAA::Input const &,struct GameAAA::GameData &)" (?Update@GameAAA@@YA?AURenderCommands@1@ABUInput@1@AAUGameData@1@@Z) referenced in function _WinMain@16
+Source.obj : error LNK2019: unresolved external symbol "void __cdecl GameAAA::DestroyGameData(struct GameAAA::GameData *)" (?DestroyGameData@GameAAA@@YAXPAUGameData@1@@Z) referenced in function _WinMain@16
+C:\Users\Alumno\Desktop\PS4\PS4_Project\ORBIS_Debug\Game.a : fatal error LNK1107: invalid or corrupt file: cannot read at 0x9E3C

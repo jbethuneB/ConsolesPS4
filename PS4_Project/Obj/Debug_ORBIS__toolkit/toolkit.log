@@ -1,0 +1,34 @@
+﻿  [WAVE] pixbg_p.pssl
+  [WAVE] vexbg_vv.pssl
+  [WAVE->H] copytexture2d_p.pssl
+  [WAVE->H] cs_clearbuffer_c.pssl
+  [WAVE->H] cs_cleartexture1d_c.pssl
+  [WAVE->H] cs_cleartexture2d_c.pssl
+  [WAVE->H] cs_cleartexture3d_c.pssl
+  [WAVE->H] cs_copybuffer_c.pssl
+  [WAVE->H] cs_copyrawtexture1d_c.pssl
+  [WAVE->H] cs_copyrawtexture2d_c.pssl
+  [WAVE->H] cs_copyrawtexture3d_c.pssl
+  [WAVE->H] cs_copytexture1d_c.pssl
+  [WAVE->H] cs_copytexture2d_c.pssl
+  [WAVE->H] cs_copytexture3d_c.pssl
+  [WAVE->H] cs_set_uint_c.pssl
+  [WAVE->H] cs_set_uint_fast_c.pssl
+  [WAVE->H] cs_test_buffer_read_c.pssl
+  [WAVE->H] cs_test_texture_read_c.pssl
+  [WAVE->H] pix_clear_p.pssl
+  [WAVE->H] pix_generateMipMaps_3d_p.pssl
+  [WAVE->H] pix_generateMipMaps_2d_p.pssl
+  [WAVE->H] vex_clear_vv.pssl
+  allocators.cpp
+  dataformat_interpreter.cpp
+  dataformat_tests.cpp
+  deallocator.cpp
+  embedded_shader.cpp
+  floating_point.cpp
+  half.cpp
+  region_allocator.cpp
+  shader_loader.cpp
+  stack_allocator.cpp
+  toolkit.cpp
+  toolkit.vcxproj -> C:\Users\Alumno\Desktop\PS4\toolkit\toolkit_debug.a
