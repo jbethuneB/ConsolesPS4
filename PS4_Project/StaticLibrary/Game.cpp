@@ -39,7 +39,10 @@ RenderCommands GameAAA::Update_Game(GameData* gameData, Input &input)
 
 glm::vec2 GameAAA::GameData::PosAimingCercle()
 {
-	return glm::vec2();
+	float x = bolas[0].x + (glm::cos(currentAimAngle) * distanceToCenterBall);
+	float y = bolas[0].y + (glm::sin(currentAimAngle) * distanceToCenterBall);
+
+	return glm::vec2(x, y);
 }
 
 void GameAAA::GameData::Initialize()
@@ -201,6 +204,7 @@ void GameAAA::GameData::ManageCollisions()
 
 RenderCommands GameAAA::GameData::ReturnDrawableElements()
 {
+	//se ejecuta cada Update
 	RenderCommands renderCommands;
 	for (auto bola : bolas)
 	{
@@ -212,5 +216,35 @@ RenderCommands GameAAA::GameData::ReturnDrawableElements()
 
 		renderCommands.elements.push_back(de);
 	}
+
+	//AIM CIRCLE
+	DrawableElement de;
+	de.whatKind = 0; //es un circulo
+	de.x = PosAimingCercle().x;
+	de.y = PosAimingCercle().y;
+	de.radi = radiusAimBall;
+	renderCommands.elements.push_back(de);
+
+	//FORCE RECTANGLES
+	float helperYvalue = -1.0;
+	float heightForEachRect = 2.0 / forceRects;
+	float leftVertexX = -0.9;
+	float rightVertexX = -0.8;
+	for (int i = 0; i < currentForceRects; i++)
+	{
+		float yvalueForBottomVertexOfRect = helperYvalue;
+		helperYvalue += heightForEachRect;
+		float yvalueForTopVertexOfRect = helperYvalue;
+
+		de.whatKind = 1; //es un rectangulo
+		de.x = leftVertexX;
+		de.x2 = rightVertexX;
+		de.y = yvalueForTopVertexOfRect;
+		de.y2 = yvalueForBottomVertexOfRect;
+		renderCommands.elements.push_back(de);
+	}
+
+	
+
 	return renderCommands;
 }

@@ -15,7 +15,7 @@ namespace GameAAA {
 
 	struct DrawableElement
 	{
-		int whatKind; //0 is Circle // 1 is Rect
+		int whatKind; //0 is Circle // 1 is Rect // 2 is aiming Circle
 		float x, y, x2, y2, radi;
 	};
 

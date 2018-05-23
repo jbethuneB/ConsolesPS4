@@ -1,2 +1,3 @@
 ﻿  Source.cpp
-  WindowsProject.vcxproj -> C:\Users\Alumno\Desktop\CONSOLAS\PS4\PS4\PS4_Project\x64\Debug\WindowsProject.exe
+c:\users\alumno\documents\misjuegos\consolesps4\ps4_project\windowsproject\source.cpp(25): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+  WindowsProject.vcxproj -> C:\Users\Alumno\Documents\MisJuegos\ConsolesPS4\PS4_Project\x64\Debug\WindowsProject.exe
